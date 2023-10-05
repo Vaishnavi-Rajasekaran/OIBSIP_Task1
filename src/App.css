@@ -1,0 +1,142 @@
+.custom-button {
+  position: relative;
+  background-color: purple;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1; /* Ensure the button text is above the pseudo-element */
+}
+
+.custom-button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0; /* Change the initial height to 0 */
+  background-color: palevioletred;
+  transition: height 0.3s ease; /* Change the transition property to height */
+  z-index: -1;
+}
+
+.custom-button:hover::before {
+  height: 100%; /* Change the height to 100% on hover */
+}
+
+.custom-navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Style the text with the orange hover effect */
+.navbar .nav-link:hover {
+  color: purple;
+}
+/* Carousel.css */
+
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  
+  color: white;
+  opacity: 0; /* Start with 0 opacity to hide the text */
+  transform: translateY(100%); /* Move the text down by 50% of its height */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add transitions for smooth animation */
+  margin-bottom: 300px;
+  margin-left: 200px;
+  text-align: left;
+}
+
+
+
+.carousel-item.active .carousel-caption {
+  opacity: 1; /* When the slide is active, make the text visible */
+  transform: translateY(0); /* Bring the text back to its original position */
+}
+.custom-butto {
+  height: 50px;
+  width: 120px;
+  position: relative;
+  background-color: palevioletred;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1; /* Ensure the button text is above the pseudo-element */
+}
+
+.custom-butto::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0; /* Change the initial height to 0 */
+  background-color:plum;
+  
+  transition: height 0.3s ease; /* Change the transition property to height */
+  z-index: -1;
+}
+
+.custom-butto:hover::before {
+  height: 100%; /* Change the height to 100% on hover */
+}
+.custom-bttn {
+  position: relative;
+  background-color: rgb(150, 150, 147);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1; /* Ensure the button text is above the pseudo-element */
+}
+
+.custom-bttn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0; /* Change the initial height to 0 */
+  background-color: palevioletred;
+  transition: height 0.3s ease; /* Change the transition property to height */
+  z-index: -1;
+}
+
+.custom-bttn:hover::before {
+  height: 100%; /* Change the height to 100% on hover */
+}
+.geeks {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.geeks img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.geeks:hover img {
+  transform: scale(1.3);
+}
+.divi {
+  background-color: rgb(223, 182, 221);
+}
+.imgep {
+  opacity: 0.5;
+}
